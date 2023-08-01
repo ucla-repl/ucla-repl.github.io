@@ -1,5 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy Pages with Pandoc
 
 on:
   # Runs on pushes targeting the default branch
@@ -31,14 +30,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - run: echo "foo" > input.txt  # create an example file
       - name: Build with pandoc
         uses: docker://pandoc/core:2.9
         with:
-          args: >-  # allows you to break string into multiple lines
+          args: >- # allows you to break string into multiple lines
             --standalone
             --output=index.html
-            input.txt
+            index.md
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
