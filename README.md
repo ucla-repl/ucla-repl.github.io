@@ -1,6 +1,6 @@
 # Instructions to updating the website
 
-Simply edit `index.md`, and GitHub will deploy the website (currently at [repl.la](repl.la)) on push.
+Simply edit `index.md`, and GitHub will deploy the website (currently at [repl.la](https://repl.la)) on push.
 
 If you want to preview the site before pushing,
 install [pandoc](https://pandoc.org), type `make`, and open `index.html`.
