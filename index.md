@@ -11,6 +11,9 @@ header-includes: |
   h1, h2, h3, h4, h5, h6 {
     color: #2774AE;
   }
+  a:hover {
+    background-color: #FFD100;
+  }
   </style>
 ---
 
