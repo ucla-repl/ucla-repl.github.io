@@ -33,10 +33,7 @@ jobs:
       - name: Build with pandoc
         uses: docker://pandoc/core:2.9
         with:
-          args: >- # allows you to break string into multiple lines
-            --standalone
-            --output=index.html
-            index.md
+          args: index.md -s -o index.html
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
