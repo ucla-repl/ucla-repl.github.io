@@ -14,6 +14,9 @@ header-includes: |
   a:hover {
     background-color: #FFD100;
   }
+  strong {
+    background-color: #FFD100;
+  }
   </style>
 ---
 
@@ -25,7 +28,7 @@ header-includes: |
 </table>
 
 Welcome to the UCLA Relational Programming Lab (RePL).  
-Our website is under construction, stay tuned!
+**Our website is under construction, stay tuned!**
 
 ## People
 
