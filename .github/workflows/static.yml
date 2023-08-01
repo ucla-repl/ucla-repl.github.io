@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build with pandoc
-        uses: docker://pandoc/core:2.9
+        uses: docker://pandoc/core:latest
         with:
           args: index.md -s -o index.html
       - name: Setup Pages
