@@ -1,4 +1,4 @@
-# Instructions to updating the website
+# Instructions for updating the website
 
 Simply edit `index.md`, and GitHub will deploy the website (currently at [repl.la](https://repl.la)) on push.
 You can even directly edit on GitHub's web interface. 
