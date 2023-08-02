@@ -14,9 +14,6 @@ header-includes: |
   a:hover {
     background-color: #FFD100;
   }
-  strong {
-    background-color: #FFD100;
-  }
   </style>
 ---
 
