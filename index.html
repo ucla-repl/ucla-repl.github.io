@@ -14,7 +14,16 @@
             padding: 15px;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        thead {
+            display: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             color: #2774AE;
         }
 
@@ -31,9 +40,16 @@
 <body>
     <h1>UCLA RePL</h1>
     <table>
-        <tr>
-        <td>2023.07.31</td> <td>Hello world!</td> 
-        </tr>
+        <thead>
+            <th>Date</th>
+            <th>News</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023.07.31</td>
+                <td>Hello world!</td>
+            </tr>
+        </tbody>
     </table>
     <p>
         Welcome to the UCLA Relational Programming Lab (RePL). <br>
@@ -41,10 +57,16 @@
 
     <h2>People</h2>
     <table>
-        <tr>
-            <td><a href="https://remy.wang">Remy Wang</a></td>
-            <td>PI</td>
-        </tr>
+        <thead>
+            <th>Name</th>
+            <th>Role</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://remy.wang">Remy Wang</a></td>
+                <td>PI</td>
+            </tr>
+        </tbody>
     </table>
 
     <h2>Projects</h2>
