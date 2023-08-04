@@ -1,4 +1,4 @@
-name: Deploy Pages with Pandoc
+name: Deploy Static Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -30,10 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Build with pandoc
-        uses: docker://pandoc/core:latest
-        with:
-          args: index.md -s -o index.html
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
